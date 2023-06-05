@@ -74,7 +74,6 @@ bool respuestaCorrecta = true;
 		srand(static_cast<unsigned int>(time(nullptr)));
 		
 		int numeroAleatorio = rand() % 5;
-		//nt numeroAleatorio = 0;
 		gotoxy(0, mitadAltoCasilla + (altoCasilla)*numeroAleatorio);
 		cout<<" INICIO    "<< char(220);
 		movimientoVertical = numeroAleatorio;
@@ -295,9 +294,6 @@ bool respuestaCorrecta = true;
 		string direccion;
 		
 		
-		bool esIgual;
-		
-		
 		ubicarInicio();
 		ubicarSalida();
 		ubicarNumeros();
@@ -306,7 +302,7 @@ bool respuestaCorrecta = true;
 		while(vidas>0 && !llegoAlFinal){
 			
 			if(respuestaCorrecta){
-				cout<<"\nEscriba una direccion: ";
+				cout<<"\nEscriba una direccion: (a,s,d,w)";
 				cin>>direccion;
 				
 				if(direccion == "s"){
